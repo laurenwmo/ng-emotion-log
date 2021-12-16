@@ -1,0 +1,29 @@
+<div id="dateDiv"></div>
+
+<div id="headerOneDiv">
+  <h1 id="headerOne">how are you?</h1>
+</div>
+<div id="howAreYou">
+  <h2 id="headerTwo">feelings:</h2>
+
+  <div class="flex flex-wrap">
+
+    <span class="basis-1/5 shrink-0 wrap"*ngFor="let emotion of emotions">
+        <input type="checkbox" [id]="emotion"/>
+        <label [for]="emotion">{{ emotion }}</label>
+    </span>
+
+  </div>
+
+  <h2 id="notes">today's notes:</h2>
+  <form action="logs.html" actionid="addLog">
+    <label for="fname"></label>
+    <textarea rows="5" cols="100" type="text" id="notesbox" name="notesbox">
+    </textarea
+    ><br />
+    <div id="buttonDiv">
+      <button id="submitButton" type="submit">add to log</button>
+      <p id="log"></p>
+    </div>
+  </form>
+</div>

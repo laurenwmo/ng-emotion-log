@@ -1,0 +1,7 @@
+<nav id="navbar">
+  <div class="w-full justify-between inline-flex p-5" id="nav-list">
+    <span class="" id="navbarheader"><strong>navigation</strong></span>
+    <span class="" *ngFor="let route of routes"><a [routerLink]="route.path">{{ route.name |lowercase}}</a></span>
+
+    </div>
+</nav>
