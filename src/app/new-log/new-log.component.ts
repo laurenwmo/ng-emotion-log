@@ -29,6 +29,9 @@ export class NewLogComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  onCheckBoxClick(event: any) {
+    console.log("turkey burkey", event)
+  }
 
 }
 
